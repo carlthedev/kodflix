@@ -15,7 +15,8 @@ img {
   padding: 4px;
 }
 
-.image-cover-row-item img {
-  height: 100%;
-  width: 100%;
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
