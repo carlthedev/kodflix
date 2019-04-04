@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Tvshow from './Tvshow'
 import breakingbad from './images/bb-cover.jpg'
 import gameofthrones from './images/got-cover.jpg'
 import bettercallsaul from './images/bcs-cover.jpg'
@@ -14,44 +15,14 @@ class App extends Component {
       <div className="App">
         <br /><br /><br />
         <div className='container'>
-          <div className='item'>
-            <img src={breakingbad} alt='breaking bad cover' />
-            <div className='overlay'>
-              <h1>Breaking Bad</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={gameofthrones} alt='game of thrones cover' />
-            <div className='overlay'>
-              <h1>Game Of Thrones</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={bettercallsaul} alt='better call saul cover' />
-            <div className='overlay'>
-              <h1>Better Call Saul</h1>
-            </div>
-          </div>
+          <Tvshow name='Breaking bad' cover={breakingbad} />
+          <Tvshow name='Game Of Thrones' cover={gameofthrones} />
+          <Tvshow name='Better call saul' cover={bettercallsaul} />
         </div>
         <div className='container'>
-          <div className='item'>
-            <img src={walkingdead} alt='walking dead cover' />
-            <div className='overlay'>
-              <h1>Walking Dead</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={prisonbreak} alt='prison break cover' />
-            <div className='overlay'>
-              <h1>Prison Break</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={gotham} alt='gotham cover' />
-            <div className='overlay'>
-              <h1>Gotham</h1>
-            </div>
-          </div>
+          <Tvshow name='Walking Dead' cover={walkingdead} />
+          <Tvshow name='Prison Break' cover={prisonbreak} />
+          <Tvshow name='Gotham' cover={gotham} />
         </div>
       </div>
     );
