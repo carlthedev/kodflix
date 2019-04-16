@@ -14,8 +14,6 @@ export default function Gallery() {
             <Tvshow id='breakingbad' name='Breaking bad' cover={breakingbad} />
             <Tvshow id='gameofthrones' name='Game Of Thrones' cover={gameofthrones} />
             <Tvshow id='bettercallsaul' name='Better call saul' cover={bettercallsaul} />
-          </div>
-          <div className='container'>
             <Tvshow id='walkingdead' name='Walking Dead' cover={walkingdead} />
             <Tvshow id='prisonbreak' name='Prison Break' cover={prisonbreak} />
             <Tvshow id='gotham' name='Gotham' cover={gotham} />
